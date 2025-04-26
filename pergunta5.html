@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pergunta 5</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="quiz-container">
+    <h2>Em que continente fica o Egito?</h2>
+    <div class="option" onclick="responder(this, true, 'fim.html')">África</div>
+    <div class="option" onclick="responder(this, false, 'fim.html')">Ásia</div>
+    <div class="option" onclick="responder(this, false, 'fim.html')">Europa</div>
+    <div class="option" onclick="responder(this, false, 'fim.html')">América</div>
+    
+    <button onclick="tentarNovamente()">Tentar novamente</button>
+    <button id="btnProxima" class="btn-proxima" style="display:none;" onclick="window.location.href='fim.html'">Próxima pergunta</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

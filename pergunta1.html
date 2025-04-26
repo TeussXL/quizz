@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pergunta 1</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="iniciarCronometro()">
+  <div class="quiz-container">
+    <div class="cronometro-container">
+      Tempo restante: <span id="cronometro">15s</span>
+    </div>
+    <h2>Qual é a capital do Brasil?</h2>
+    <div class="option" onclick="responder(this, true, 'pergunta2.html')">Brasília</div>
+    <div class="option" onclick="responder(this, false, 'pergunta2.html')">São Paulo</div>
+    <div class="option" onclick="responder(this, false, 'pergunta2.html')">Rio de Janeiro</div>
+    <div class="option" onclick="responder(this, false, 'pergunta2.html')">Salvador</div>
+    <button onclick="tentarNovamente()">Tentar novamente</button>
+    <button id="btnProxima" style="display:none;">Próxima pergunta</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pergunta 2</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="quiz-container">
+    <h2>Qual é o maior planeta do sistema solar?</h2>
+    <div class="option" onclick="responder(this, false, 'pergunta3.html')">Terra</div>
+    <div class="option" onclick="responder(this, true, 'pergunta3.html')">Júpiter</div>
+    <div class="option" onclick="responder(this, false, 'pergunta3.html')">Saturno</div>
+    <div class="option" onclick="responder(this, false, 'pergunta3.html')">Marte</div>
+    
+    <button onclick="tentarNovamente()">Tentar novamente</button>
+    <button id="btnProxima" class="btn-proxima" style="display:none;" onclick="window.location.href='pergunta3.html'">Próxima pergunta</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

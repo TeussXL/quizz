@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pergunta 3</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="quiz-container">
+    <h2>Quem escreveu 'Dom Casmurro'?</h2>
+    <div class="option" onclick="responder(this, true, 'pergunta4.html')">Machado de Assis</div>
+    <div class="option" onclick="responder(this, false, 'pergunta4.html')">José de Alencar</div>
+    <div class="option" onclick="responder(this, false, 'pergunta4.html')">Clarice Lispector</div>
+    <div class="option" onclick="responder(this, false, 'pergunta4.html')">Carlos Drummond</div>
+    
+    <button onclick="tentarNovamente()">Tentar novamente</button>
+    <button id="btnProxima" class="btn-proxima" style="display:none;" onclick="window.location.href='pergunta4.html'">Próxima pergunta</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
