@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pergunta 2</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body onload="iniciarCronometro()">
+  <div class="quiz-container">
+  <div class="cronometro-container">
+    Tempo restante: <span id="cronometro">20s</span>
+  </div>
+    <h2>2. Quando dizemos que um gene é dominante, isso significa que:
+    </h2>
+    <div class="option" onclick="responder(this, false, 'pergunta3.html')">A) Ele é mais fraco que o recessivo
+    </div>
+    <div class="option" onclick="responder(this, false, 'pergunta3.html')">B) Ele sempre se esconde
+    </div>
+    <div class="option" onclick="responder(this, true, 'pergunta3.html')">C) Sua característica se manifesta mesmo em dose simples
+    </div>
+    <div class="option" onclick="responder(this, false, 'pergunta3.html')">D) Precisa estar em dose dupla para aparecer
+    </div>
+    
+    <button onclick="tentarNovamente()">Tentar novamente</button>
+    <button id="btnProxima" class="btn-proxima" style="display:none;" onclick="window.location.href='pergunta3.html'">Próxima pergunta</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

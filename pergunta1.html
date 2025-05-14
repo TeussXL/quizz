@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Pergunta 1</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="iniciarCronometro()">
+  <div class="quiz-container">
+    <div class="cronometro-container">
+      Tempo restante: <span id="cronometro">20s</span>
+    </div>
+    <h2>1. O material genético dos seres vivos é composto principalmente por:
+    </h2>
+    <div class="option" onclick="responder(this, false, 'pergunta2.html')">A) Proteínas
+    </div>
+    <div class="option" onclick="responder(this, true, 'pergunta2.html')">B) DNA
+    </div>
+    <div class="option" onclick="responder(this, false, 'pergunta2.html')">C) Carboidratos
+    </div>
+    <div class="option" onclick="responder(this, false, 'pergunta2.html')">D) Lipídios
+    </div>
+    <button onclick="tentarNovamente()">Tentar novamente</button>
+    <button id="btnProxima" style="display:none;">Próxima pergunta</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

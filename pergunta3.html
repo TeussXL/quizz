@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pergunta 3</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body onload="iniciarCronometro()">
+  <div class="quiz-container">
+  <div class="cronometro-container">
+    Tempo restante: <span id="cronometro">20s</span>
+    <h2>3. Um casal heterozigoto para a cor dos olhos (marrom dominante sobre azul) pode ter filhos de olhos azuis?
+    </h2>
+    <div class="option" onclick="responder(this, false, 'pergunta4.html')">A) Sim, com 50% de chance
+    </div>
+    <div class="option" onclick="responder(this, false, 'pergunta4.html')">B) Sim, com 75% de chance
+    </div>
+    <div class="option" onclick="responder(this, true, 'pergunta4.html')">C)Sim, com 25% de chance 
+    </div>
+    <div class="option" onclick="responder(this, false, 'pergunta4.html')">D) Não, é impossível
+    </div>
+    
+    <button onclick="tentarNovamente()">Tentar novamente</button>
+    <button id="btnProxima" class="btn-proxima" style="display:none;" onclick="window.location.href='pergunta4.html'">Próxima pergunta</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pergunta BÔNUS</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body onload="iniciarCronometro()">
+  <div class="quiz-container">
+    <div class="cronometro-container">
+      Tempo restante: <span id="cronometro">20s</span>
+    <h2>Extraa: Durante o processo de transcrição do DNA, qual das seguintes afirmações está correta?
+    </h2>
+    <div class="option" onclick="responder(this, false, 'fim.html')">A) A fita de DNA é traduzida diretamente em proteínas
+    </div>
+    <div class="option" onclick="responder(this, false, 'fim.html')">B) A RNA polimerase sintetiza uma molécula de DNA a partir do RNA
+    </div>
+    <div class="option" onclick="responder(this, false, 'fim.html')">C) A transcrição ocorre no citoplasma nas células eucarióticas
+    </div>
+    <div class="option" onclick="responder(this, true, 'fim.html')"> D) A RNA polimerase sintetiza RNA complementar à fita molde de DNA
+    </div>
+    
+    <button onclick="tentarNovamente()">Tentar novamente</button>
+    <button id="btnProxima" class="btn-proxima" style="display:none;" onclick="window.location.href='fim.html'">Próxima pergunta</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pergunta 4</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body onload="iniciarCronometro()">
+  <div class="quiz-container">
+    <div class="cronometro-container">
+      Tempo restante: <span id="cronometro">20s</span>
+    <h2>4. Quando ocorre a segregação dos alelos durante a formação dos gametas, estamos falando da:
+    </h2>
+    <div class="option" onclick="responder(this, true, 'pergunta5.html')">A) Primeira Lei de Mendel
+    </div>
+    <div class="option" onclick="responder(this, false, 'pergunta5.html')">B) Segunda Lei de Mendel
+    </div>
+    <div class="option" onclick="responder(this, false, 'pergunta5.html')">C) Mutação gênica
+    </div>
+    <div class="option" onclick="responder(this, false, 'pergunta5.html')">D) Codominância
+    </div>
+    
+    <button onclick="tentarNovamente()">Tentar novamente</button>
+    <button id="btnProxima" class="btn-proxima" style="display:none;" onclick="window.location.href='pergunta5.html'">Próxima pergunta</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

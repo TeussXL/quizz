@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pergunta 5</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body onload="iniciarCronometro()">
+  <div class="quiz-container">
+    <div class="cronometro-container">
+      Tempo restante: <span id="cronometro">20s</span>
+    <h2>5. Uma mulher com tipo sanguíneo AB e um homem com tipo O podem ter filhos com qual tipo sanguíneo?
+    </h2>
+    <div class="option" onclick="responder(this, false, 'fim.html')">A) Apenas O
+    </div>
+    <div class="option" onclick="responder(this, false, 'fim.html')">B) Apenas AB
+    </div>
+    <div class="option" onclick="responder(this, true, 'pergunta6.html')">C) Apenas A ou B
+    </div>
+    <div class="option" onclick="responder(this, false, 'pergunta5')"> D)Todos os tipos
+    </div>
+    
+    <button onclick="tentarNovamente()">Tentar novamente</button>
+    <button id="btnProxima" class="btn-proxima" style="display:none;" onclick="window.location.href='pergunta6.html'">Próxima pergunta</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
