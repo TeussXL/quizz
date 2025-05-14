@@ -6,6 +6,7 @@
   <title>Pergunta 5</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
+<<<<<<< HEAD
 <body onload="iniciarCronometro()">
   <div class="quiz-container">
     <div class="cronometro-container">
@@ -23,6 +24,18 @@
     
     <button onclick="tentarNovamente()">Tentar novamente</button>
     <button id="btnProxima" class="btn-proxima" style="display:none;" onclick="window.location.href='pergunta6.html'">Próxima pergunta</button>
+=======
+<body>
+  <div class="quiz-container">
+    <h2>Em que continente fica o Egito?</h2>
+    <div class="option" onclick="responder(this, true, 'fim.html')">África</div>
+    <div class="option" onclick="responder(this, false, 'fim.html')">Ásia</div>
+    <div class="option" onclick="responder(this, false, 'fim.html')">Europa</div>
+    <div class="option" onclick="responder(this, false, 'fim.html')">América</div>
+    
+    <button onclick="tentarNovamente()">Tentar novamente</button>
+    <button id="btnProxima" class="btn-proxima" style="display:none;" onclick="window.location.href='fim.html'">Próxima pergunta</button>
+>>>>>>> d5e0fa88885506e10b06e67cad90f1e0c9747df0
   </div>
   <script src="script.js"></script>
 </body>
