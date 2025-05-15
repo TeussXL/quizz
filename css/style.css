@@ -1,9 +1,5 @@
 body {
-<<<<<<< HEAD
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-=======
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
->>>>>>> d5e0fa88885506e10b06e67cad90f1e0c9747df0
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +10,6 @@ body {
 }
 
 @keyframes gradientAnimation {
-<<<<<<< HEAD
   0% {
     background-position: 0% 50%;
   }
@@ -24,11 +19,6 @@ body {
   100% {
     background-position: 0% 50%;
   }
-=======
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
->>>>>>> d5e0fa88885506e10b06e67cad90f1e0c9747df0
 }
 
 .quiz-container {
@@ -43,7 +33,6 @@ body {
 }
 
 @keyframes fadeIn {
-<<<<<<< HEAD
   from {
     opacity: 0;
     transform: translateY(-20px);
@@ -52,10 +41,6 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
-=======
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
->>>>>>> d5e0fa88885506e10b06e67cad90f1e0c9747df0
 }
 
 h2 {
@@ -95,7 +80,6 @@ h2 {
 }
 
 @keyframes correctAnim {
-<<<<<<< HEAD
   0% {
     transform: scale(1);
   }
@@ -117,17 +101,6 @@ h2 {
   100% {
     transform: scale(1);
   }
-=======
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); }
-}
-
-@keyframes wrongAnim {
-  0% { transform: scale(1); }
-  50% { transform: scale(0.95); }
-  100% { transform: scale(1); }
->>>>>>> d5e0fa88885506e10b06e67cad90f1e0c9747df0
 }
 
 button {
@@ -142,10 +115,6 @@ button {
   cursor: pointer;
   transition: background-color 0.3s ease;
   background: linear-gradient(135deg, #311f72, #2196f3);
-<<<<<<< HEAD
-=======
-  
->>>>>>> d5e0fa88885506e10b06e67cad90f1e0c9747df0
 }
 
 button:hover {
@@ -186,16 +155,10 @@ button:hover {
   border-radius: 12px;
   padding: 20px;
   width: 200px;
-<<<<<<< HEAD
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s;
   box-sizing: border-box;
-=======
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  text-align: center;
-  transition: transform 0.3s;
->>>>>>> d5e0fa88885506e10b06e67cad90f1e0c9747df0
 }
 
 .card:hover {
@@ -228,18 +191,12 @@ button:hover {
   align-items: center;
   padding: 30px;
   animation: gradientBG 15s ease infinite;
-<<<<<<< HEAD
 
   flex-direction: column;
-=======
-  overflow-y: auto;
-  flex-direction: column;  
->>>>>>> d5e0fa88885506e10b06e67cad90f1e0c9747df0
 }
 
 .intro-box {
   text-align: center;
-<<<<<<< HEAD
   background: rgba(255, 255, 255, 0.95);
   padding: 40px;
   border-radius: 10px;
@@ -247,25 +204,7 @@ button:hover {
   max-width: 900px;
   width: 100%;
   animation: fadeIn 1s ease-out;
-=======
-  background: rgba(255,255,255,0.95);
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-  max-width: 900px;
-  width: 100%;
-  animation: fadeIn 1s ease-out;
-  margin: 0 auto;
->>>>>>> d5e0fa88885506e10b06e67cad90f1e0c9747df0
+
   position: relative;
   z-index: 1;
 }
-
-<<<<<<< HEAD
-=======
-.intro-box h1 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-  color: #292929;
-}
->>>>>>> d5e0fa88885506e10b06e67cad90f1e0c9747df0

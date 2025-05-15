@@ -1,9 +1,5 @@
 let respondido = false;
-<<<<<<< HEAD
 let tempoRestante = 20; // segundos
-=======
-let tempoRestante = 15; // segundos
->>>>>>> d5e0fa88885506e10b06e67cad90f1e0c9747df0
 let intervalo;
 
 function iniciarCronometro() {
@@ -25,11 +21,7 @@ function iniciarCronometro() {
 function atualizarBarraProgresso() {
   const barra = document.getElementById("barra-progresso");
   if (barra) {
-<<<<<<< HEAD
     barra.style.width = (tempoRestante / 20) * 100 + "%";
-=======
-    barra.style.width = (tempoRestante / 15) * 100 + "%";
->>>>>>> d5e0fa88885506e10b06e67cad90f1e0c9747df0
   }
 }
 
