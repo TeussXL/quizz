@@ -208,3 +208,164 @@ button:hover {
   position: relative;
   z-index: 1;
 }
+ 
+.share {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  transition: .4s ease-in-out;
+  margin-top: 60px;
+  margin-right: 5em;
+}
+
+.btn1 {
+  position: relative;
+  width: 3em;
+  height: 3em;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  transition: .4s all;
+}
+
+.btn1 .instagram {
+  margin-top: 0.1em;
+  fill: #cc39a4;
+}
+
+.btn1 .tooltiptext1 {
+  visibility: hidden;
+  width:5em;
+  height: 5em;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1em;
+  position: absolute;
+  left: -1.5em;
+  top: -8em;
+  z-index: 1;
+  transition: .1s ease-in-out;
+}
+
+.btn1 .tooltiptext1 .card {
+  width: 4em;
+  height: 4em;
+  background-color: white;
+}
+
+.btn1 .tooltiptext1 .account {
+  margin-top: 0em;
+}
+
+.btn1 .tooltiptext1 .username {
+  font-size: 0.7em;
+  margin-top: 1.6em;
+  font-weight: bold;
+}
+
+.btn1:hover .tooltiptext1 {
+  transform: translateY(-1em);
+  visibility: visible;
+}
+
+.btn1:hover {
+  background-color: #cc39a4;
+}
+
+.btn1:hover .instagram {
+  fill: white;
+}
+
+.btn3 {
+  position: relative;
+  width: 3em;
+  height: 3em;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+  transition: .4s all;
+}
+
+.btn3 .tooltiptext3 {
+  visibility: hidden;
+  width: 5em;
+  height: 5em;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1em;
+  position: absolute;
+  left: -1.5em;
+  top: -8em;
+  z-index: 1;
+  transition: .1s ease-in-out;
+}
+
+.btn3 .tooltiptext3 .card {
+  width: 4em;
+  height: 4em;
+  background-color: white;
+}
+
+.btn3 .tooltiptext3 .account {
+  margin-top: 0em;
+}
+
+.btn3 .tooltiptext3 .username {
+  font-size: 0.7em;
+  margin-top: 1.6em;
+  font-weight: bold;
+}
+
+.btn3:hover .tooltiptext3 {
+  transform: translateY(-1em);
+  visibility: visible;
+}
+
+.btn3:hover {
+  background-color: black;
+}
+
+.btn3:hover .git {
+  fill: white;
+}
+
+/* Centraliza os ícones SVG nas bolhas */
+.btn1 svg,
+.btn2 svg,
+.btn3 svg {
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1.7em;
+  height: 1.7em;
+}
+
+/* Posiciona o grupo de botões no canto inferior direito */
+.share {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  margin-top: 0;
+  z-index: 100;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+/* Centraliza o conteúdo do card dentro do tooltip */
+.btn1 .tooltiptext1 .card,
+.btn3 .tooltiptext3 .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  cursor: pointer;
+}

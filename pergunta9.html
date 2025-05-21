@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>pergunta 9</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body onload="iniciarCronometro()">
+  <div class="quiz-container">
+    <div class="cronometro-container">
+      Tempo restante: <span id="cronometro">20s</span>
+    <h2>9. Quando indivíduos de uma espécie são isolados em um ambiente muito diferente, como a seleção natural pode influenciar o grupo?
+    </h2>
+    <div class="option" onclick="responder(this, false, 'pergunta9')">A) Eles imediatamente se tornam uma nova espécie por mutação
+    </div>
+    <div class="option" onclick="responder(this, false, 'pergunta9')">B) Todos se adaptam rapidamente de forma consciente
+    </div>
+    <div class="option" onclick="responder(this, false, 'pergunta9')">C) A seleção natural garante que apenas os mais fortes sobrevivam, sem mudanças genéticas
+    </div>
+    <div class="option" onclick="responder(this, true, 'pergunta10.html')">D) Pode ocorrer acúmulo de adaptações que levem, com o tempo, ao surgimento de uma nova espécie
+    </div>
+    
+    <button onclick="tentarNovamente()">Tentar novamente</button>
+    <button id="btnProxima" class="btn-proxima" style="display:none;" onclick="window.location.href='pergunta10'">Próxima pergunta</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

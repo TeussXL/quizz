@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>pergunta 8</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body onload="iniciarCronometro()">
+  <div class="quiz-container">
+    <div class="cronometro-container">
+      Tempo restante: <span id="cronometro">20s</span>
+    <h2>8. A seleção natural atua sobre os indivíduos, mas quem realmente evolui são as populações. Por que isso ocorre?
+    </h2>
+    <div class="option" onclick="responder(this, false, 'fim.html')">A) Porque os indivíduos mudam geneticamente ao longo da vida
+    </div>
+    <div class="option" onclick="responder(this, false, 'fim.html')">B) Porque os indivíduos evoluem e transmitem diretamente suas experiências
+    </div>
+    <div class="option" onclick="responder(this, true, 'pergunta9.html')">C) Porque as características vantajosas são herdadas e se tornam comuns nas próximas gerações
+    </div>
+    <div class="option" onclick="responder(this, false, 'fim.html')">D) Porque a seleção natural altera diretamente o DNA de cada indivíduo
+    </div>
+    
+    <button onclick="tentarNovamente()">Tentar novamente</button>
+    <button id="btnProxima" class="btn-proxima" style="display:none;" onclick="window.location.href='pergunta9'">Próxima pergunta</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

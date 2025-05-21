@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>pergunta 7</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body onload="iniciarCronometro()">
+  <div class="quiz-container">
+    <div class="cronometro-container">
+      Tempo restante: <span id="cronometro">20s</span>
+    <h2>7. O uso indiscriminado de antibióticos pode ser considerado um exemplo de pressão seletiva. Por quê?
+    </h2>
+    <div class="option" onclick="responder(this, false, 'fim.html')">A) Porque elimina todas as bactérias, impedindo sua evolução
+    </div>
+    <div class="option" onclick="responder(this, false, 'fim.html')">B) Porque força os organismos a evoluírem de maneira controlada
+    </div>
+    <div class="option" onclick="responder(this, true, 'pergunta8.html')">C) Porque favorece a sobrevivência de bactérias resistentes, que se multiplicam
+    </div>
+    <div class="option" onclick="responder(this, false, 'fim.html')">D) Porque impede que mutações ocorram nas populações bacterianas
+    </div>
+    
+    <button onclick="tentarNovamente()">Tentar novamente</button>
+    <button id="btnProxima" class="btn-proxima" style="display:none;" onclick="window.location.href='pergunta8.html'">Próxima pergunta</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

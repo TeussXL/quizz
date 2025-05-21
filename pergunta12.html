@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>pergunta 12</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body onload="iniciarCronometro()">
+  <div class="quiz-container">
+    <div class="cronometro-container">
+      Tempo restante: <span id="cronometro">20s</span>
+    <h2>12. Por que é incorreto afirmar que a espécie humana é o "ápice" da evolução, segundo a biologia moderna?
+    </h2>
+    <div class="option" onclick="responder(this, false, 'pergunta9')">A) Porque os humanos são mais inteligentes que os outros animais
+    </div>
+    <div class="option" onclick="responder(this, false, 'pergunta9')">B) Porque a evolução humana parou após o surgimento da agricultura
+    </div>
+    <div class="option" onclick="responder(this, true, 'fim.html')"> C) Porque a evolução não tem objetivo nem direção; trata-se de mudanças adaptativas ao ambiente ao longo do tempo
+    </div>
+    <div class="option" onclick="responder(this, false, 'pergunta9')">D) Porque os humanos não evoluíram por seleção natural, e sim artificialmente
+    </div>
+    
+    <button onclick="tentarNovamente()">Tentar novamente</button>
+    <button id="btnProxima" class="btn-proxima" style="display:none;" onclick="window.location.href='pergunta12'">Próxima pergunta</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

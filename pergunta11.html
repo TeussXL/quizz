@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>pergunta 11</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body onload="iniciarCronometro()">
+  <div class="quiz-container">
+    <div class="cronometro-container">
+      Tempo restante: <span id="cronometro">20s</span>
+    <h2>11. Qual das alternativas caracteriza corretamente o processo de seleção artificial?
+    </h2>
+    <div class="option" onclick="responder(this, false, 'pergunta9')">A) O ambiente seleciona espontaneamente os indivíduos mais adaptados
+    </div>
+    <div class="option" onclick="responder(this, true, 'pergunta12.html')">B) Os seres humanos escolhem quais características devem ser mantidas nas próximas gerações
+    </div>
+    <div class="option" onclick="responder(this, false, 'pergunta9')">C) Apenas as mutações naturais definem quais características serão selecionadas
+    </div>
+    <div class="option" onclick="responder(this, false, 'pergunta9')">D) Características menos vantajosas são sempre eliminadas pelo acaso
+    </div>
+    
+    <button onclick="tentarNovamente()">Tentar novamente</button>
+    <button id="btnProxima" class="btn-proxima" style="display:none;" onclick="window.location.href='pergunta12'">Próxima pergunta</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
